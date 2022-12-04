@@ -6,8 +6,7 @@ def calculate_value(line):
     section1 = set(range(section1[0], section1[1]+1))
     section2 = set(range(section2[0], section2[1]+1))
 
-    intersection_count = len(section1.intersection(section2))
-    return  intersection_count == len(section1) or intersection_count == len(section2)
+    return len(section1.intersection(section2)) > 0
     
 
 def main():
