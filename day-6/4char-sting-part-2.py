@@ -5,6 +5,7 @@ def calculate_value(line):
     for i in range(distinct_value):
         distinct[line[i]] = distinct.get(line[i], 0) + 1
     index = distinct_value
+    
     while index < len(line):
         distinct[line[index]] = distinct.get(line[index], 0) + 1
         distinct[line[index-distinct_value]] -= 1
