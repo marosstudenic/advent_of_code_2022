@@ -26,8 +26,6 @@ def count_scentic_score(grid, row, column):
 
 
 def calculate_value(inputs):
-    blocks_count = [[0 for x in range(len(inputs))] for i in range(len(inputs))]
-
     grid = [[0 for x in range(len(inputs))] for i in range(len(inputs))]
     for i in range(len(inputs)):
         for j in range(len(inputs)):
