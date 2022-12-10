@@ -40,14 +40,6 @@ class Simulation:
        
     
     def count_visited(self):
-        v = set()
-        print(sum([sum(x) for x in self.plain_visited]))
-        for row in range(len(self.plain_visited)):
-            for col in range(len(self.plain_visited[row])):
-                if self.plain_visited[row][col] == 1:
-                    v.add((row, col))
-
-        print(v.difference(self.visted), len(v.difference(self.visted)))
         return len(self.visted)
 
     def print_visited(self):
